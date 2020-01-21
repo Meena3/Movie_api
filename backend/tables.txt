@@ -1,0 +1,5 @@
+create table movie_details(movie_id int not null auto_increment,
+                            movie_name varchar(255),
+                            movie_poster varchar(255),
+                            primary key(movie_id)
+                        );
