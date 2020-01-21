@@ -36,13 +36,10 @@ export default class Home extends React.Component{
                         <div style = {{marginBottom:"20px"}}>
                             <h3 style = {{color:"red"}}>Movie Title:{e[1]}</h3>
                             <img src = {`http://127.0.0.1:5000/${e[2]}`}
-                                style = {{width:"150px",height:"150px"}} alt = "No image"
+                                style = {{width:"500px",height:"300px"}} alt = "No image"
                             />
                              <Link to = {`/updatemovie/${e[0]}`}>
                                <button style = {{height:"20px",width:"100px", backgroundColor:"skyblue"}}>Update</button>
-                           </Link>
-                           <Link to = {`/deletemovie/${e[0]}`}>
-                               <button style = {{height:"20px",width:"100px", backgroundColor:"skyblue"}}>Delete</button>
                            </Link>
                         </div>
                         )
